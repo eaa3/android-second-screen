@@ -12,6 +12,7 @@ run xrandr --fb 4160x1800 --output "DP-2" --scale 1.0x1.0 --panning 4160x1800+0+
 sleep 5
 run xrandr --fb 4160x1800 --output "DP-2" --scale 1.0x1.0 --panning 2880x1800+0+0/4160x1800+0+0
 
+#x11vnc -clip 1280x720+2880+0 -xrandr -ncache 1 -nosel -viewonly -fixscreen \"V=2\" -noprimary -nosetclipboard -noclipboard -cursor arrow -nopw -nowf -nonap -noxdamage -sb 0 -display :0
 
 run x11vnc -clip 1280x720+2880+0
 
